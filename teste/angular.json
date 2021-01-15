@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testeProgramacao": {
+    "teste": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/testeProgramacao",
+            "outputPath": "dist/teste",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testeProgramacao:build"
+            "browserTarget": "teste:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "testeProgramacao:build:production"
+              "browserTarget": "teste:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testeProgramacao:build"
+            "browserTarget": "teste:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "testeProgramacao:serve"
+            "devServerTarget": "teste:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "testeProgramacao:serve:production"
+              "devServerTarget": "teste:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "testeProgramacao",
+  "defaultProject": "teste",
   "cli": {
-    "analytics": "bfbaa6be-e95a-40b3-a9cb-88fc00519dc4"
+    "analytics": "103a96a1-84fd-43f5-a74b-2c8bcfa716d0"
   }
 }
