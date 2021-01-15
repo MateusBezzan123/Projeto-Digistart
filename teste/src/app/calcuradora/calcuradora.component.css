@@ -15,11 +15,16 @@ h2 {
 .container {
   font-family: "Roboto", sans-serif;
   background-color: #82ccdd;
-  padding: 20px 20px 20px;
-  border-radius: 20px;
-  position: absolute;
-  top: 20%;
-  left: 38%;
+  position: relative;
+  top: 5em;
+  width: 520px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .row {
@@ -32,6 +37,7 @@ h2 {
 }
 
 input {
+  padding-left: 200px;
   text-align: center;
   font-size: 24px;
 }

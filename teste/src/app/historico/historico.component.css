@@ -14,13 +14,17 @@ h2 {
 .container {
   font-family: "Roboto", sans-serif;
   background-color: #82ccdd;
-  padding: 20px 60px 20px;
+  position: relative;
+  top: 5em;
+  width: 520px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   border-radius: 10px;
-  position: absolute;
-  top: 20%;
-  left: 38%;
 }
 
+a:link {
+  text-decoration: none;
+}
 .row {
   margin-top: 20px;
 }
