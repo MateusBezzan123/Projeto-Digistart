@@ -4,12 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CalcuradoraComponent } from './calcuradora/calcuradora.component';
 import { HistoricoComponent } from './historico/historico.component';
-import { Routes, RouterModule } from "@angular/router";
+import { routing } from './app.routes'
 
-const routes: Routes = [
-  { path: "calculadora", component: CalcuradoraComponent },
-  { path: "historico", component: HistoricoComponent },
-];
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +13,7 @@ const routes: Routes = [
     HistoricoComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
+    routing,
     BrowserModule
   ],
   providers: [],
