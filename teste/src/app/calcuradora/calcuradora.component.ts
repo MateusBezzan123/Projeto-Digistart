@@ -36,7 +36,7 @@ export class CalcuradoraComponent implements OnInit {
   }
 
   public finalizar(): void {
-    let vetorBin = this.resultado.split("+");
+    let vetorBin = this.resultado.split("+,-,*,%");
     let soma: number = 0;
     vetorBin.forEach((element) => {
       soma += parseInt(element, 2);
@@ -48,5 +48,4 @@ export class CalcuradoraComponent implements OnInit {
       "=" +
       this.resultado;
   }
-
 }

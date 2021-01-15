@@ -44,7 +44,28 @@
       </button>
       <button
         type="button"
-        (click)="finalizar()"
+        (click)="montarResultado('-')"
+        class="btn btn-dark btn-lg btn-block"
+      >
+        -
+      </button>
+      <button
+        type="button"
+        (click)="montarResultado('*')"
+        class="btn btn-dark btn-lg btn-block"
+      >
+        X
+      </button>
+      <button
+        type="button"
+        (click)="montarResultado('%')"
+        class="btn btn-dark btn-lg btn-block"
+      >
+        %
+      </button>
+      <button
+        type="button"
+        (click)="finalizar() "
         class="btn btn-success btn-lg btn-block"
       >
         =
