@@ -1,1 +1,21 @@
-<p>historico works!</p>
+<h2>Histórico</h2>
+
+<div class="container">
+  <div class="form-group">
+    <textarea class="form-control" id="historico" disabled rows="10">{{
+      historico
+    }}</textarea>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <button
+        type="button"
+        class="btn btn-danger btn-block text-justify-center"
+        (click)="limparHistorico()"
+      >
+        Limpar Histórico
+      </button>
+    </div>
+  </div>
+</div>
